@@ -1,0 +1,16 @@
+{
+  "name": "kanban-api",
+  "version": "1.0.0",
+  "description": "Backend (API) part of a Kanban app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Holban",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:victorholban/kanban-app.git"
+  },
+  "private": true
+}
