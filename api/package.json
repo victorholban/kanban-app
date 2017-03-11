@@ -1,8 +1,7 @@
 {
-  "name": "kanban-api",
+  "name": "kanban-root",
   "version": "1.0.0",
-  "description": "Backend (API) part of a Kanban app",
-  "main": "index.js",
+  "description": "Root part of a Kanban app",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

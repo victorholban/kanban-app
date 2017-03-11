@@ -1,0 +1,37 @@
+{
+  "name": "kanban-web",
+  "version": "1.0.0",
+  "description": "Frontend part of a Kanban app",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all -p -l install:api install:web",
+    "install:web": "(cd web && npm install)",
+    "install:api": "(cd api && npm install)",
+
+    "start": "npm-run-all -p -l start:api start:web",
+    "start:web": "(cd web && npm run start)",
+    "start:api": "(cd api && npm run start)",
+
+    "test": "npm-run-all -p -l test:api test:web",
+    "test:web": "(cd web && npm run test)",
+    "test:api": "(cd api && npm run test)",
+
+    "clean": "npm-run-all -p -l clean:api clean:web",
+    "clean:web": "(rm -rf web/node_modules web/build)",
+    "clean:api": "(rm -rf api/node_modules api/build)",
+
+    "build": "npm-run-all -p -l build:api build:web",
+    "build:web": "(cd web && npm run build)",
+    "build:api": "(cd api && npm run build)"
+  },
+  "author": "Victor Holban",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:victorholban/kanban-app.git"
+  },
+  "private": true,
+  "devDependencies": {
+    "npm-run-all": "^4.0.2"
+  }
+}
